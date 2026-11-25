@@ -1,0 +1,94 @@
+{
+  "config": {
+    "semilla": 4002,
+    "dias": 30,
+    "horas": 24,
+    "potencia_it_kw": 120.0,
+    "sd_it_dia_kw": 6.0,
+    "sd_ambiente_dia_c": 2.0,
+    "refrigeracion_base_kw": 35.0,
+    "auxiliares_base_kw": 37.0,
+    "factor_refrigeracion_mejorada": 0.6,
+    "auxiliares_mejorada_kw": 27.0,
+    "sd_refrigeracion_dia_kw": 1.8,
+    "inspecciones_dia": 20,
+    "prob_rechazo": 0.02,
+    "avisos_dia": 1.5,
+    "alpha": 0.05
+  },
+  "calidad": {
+    "filas_brutas": 1441,
+    "duplicados_exactos": 1,
+    "totales_reconstruidos": 2,
+    "filas_limpias": 1440,
+    "ausentes_finales": 0
+  },
+  "relacion": {
+    "n": 30,
+    "covarianza": 102.06005015174085,
+    "pearson_r": 0.656144359546976,
+    "spearman_rho": 0.5016685205784205
+  },
+  "probabilidades": {
+    "n_binomial": 20,
+    "inspecciones_totales": 600,
+    "rechazos_totales": 9,
+    "p_estimado": 0.015,
+    "binomial_al_menos_uno": 0.2608635666528982,
+    "binomial_manual": 0.26086356665289845,
+    "lambda_estimada": 1.0333333333333334,
+    "avisos_totales": 31,
+    "poisson_al_menos_tres": 0.08653376524385721,
+    "poisson_manual": 0.08653376524385736,
+    "mu_it_kw": 120.80029470649102,
+    "s_it_kw": 5.303767104235132,
+    "z_130": 1.734560570384565,
+    "normal_mayor_130": 0.04140933426203396,
+    "normal_manual": 0.041409334262033956,
+    "fraccion_empirica_mayor_130": 0.06666666666666667,
+    "shapiro_it_p": 0.5073031428677783,
+    "moda_avisos": [
+      0
+    ],
+    "frecuencia_moda_avisos": 12
+  },
+  "contraste": {
+    "n": 30,
+    "gl": 29,
+    "alpha": 0.05,
+    "ahorro_medio_kwh": 575.5491147403961,
+    "s_ahorro_kwh": 83.25875762162266,
+    "error_estandar_kwh": 15.200899886405969,
+    "t_manual": 37.86283174294863,
+    "t_scipy": 37.86283174294863,
+    "p_unilateral": 1.5153385067349229e-26,
+    "ic95_inferior": 544.459783705627,
+    "ic95_superior": 606.6384457751652,
+    "shapiro_diferencias_p": 0.06369077489681678,
+    "ahorro_pct": 12.46517056488196,
+    "anualizacion_ilustrativa_kwh": 210075.4268802446
+  },
+  "pue_periodo": {
+    "base": 1.592593464844386,
+    "mejorado": 1.3940739730463698
+  },
+  "verificaciones": {
+    "estado": "CORRECTO",
+    "controles": [
+      "Carga IT idéntica entre escenarios",
+      "Balance de energía horario-diario",
+      "Binomial: fórmula vs SciPy",
+      "Poisson: fórmula vs SciPy",
+      "Normal: erfc vs SciPy",
+      "t: cálculo directo vs SciPy",
+      "Cálculos centrales de Fase I"
+    ]
+  },
+  "entorno": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

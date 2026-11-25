@@ -1,0 +1,17 @@
+{
+  "semilla": 4002,
+  "dias": 30,
+  "horas": 24,
+  "potencia_it_kw": 120.0,
+  "sd_it_dia_kw": 6.0,
+  "sd_ambiente_dia_c": 2.0,
+  "refrigeracion_base_kw": 35.0,
+  "auxiliares_base_kw": 37.0,
+  "factor_refrigeracion_mejorada": 0.6,
+  "auxiliares_mejorada_kw": 27.0,
+  "sd_refrigeracion_dia_kw": 1.8,
+  "inspecciones_dia": 20,
+  "prob_rechazo": 0.02,
+  "avisos_dia": 1.5,
+  "alpha": 0.05
+}
